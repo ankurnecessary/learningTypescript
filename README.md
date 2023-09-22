@@ -1,0 +1,2 @@
+# learningTypescript
+To learn typescript
