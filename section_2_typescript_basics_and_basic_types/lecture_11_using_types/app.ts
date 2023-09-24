@@ -1,11 +1,14 @@
-const product = {
-    id: 'abc1',
-    price: 12.99,
-    tags: ['great-offer', 'hot-and-new'],
-    details: {
-        title: 'Red Carpet',
-        description: 'A great carpet - almost brand-new!'
-    }
+const person = {
+    name: 'Ankur'
+    , age: 40
+    , hobbies: ['sports', 'cooking']
 }
 
-console.log(product);
+let favouriteActivities: string[];
+favouriteActivities = ['skye'];
+
+console.log(person);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+}
