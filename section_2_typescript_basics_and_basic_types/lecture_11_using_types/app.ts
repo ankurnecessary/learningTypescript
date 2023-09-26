@@ -1,4 +1,7 @@
-function combine(input1: number | string, input2: number | string) {
+type combinable = number | string;
+type conversionDescriptor = 'as-number' | 'as-text';
+
+function combine(input1: combinable, input2: combinable, aLiteral: conversionDescriptor) {
     let result;
     if (typeof (input1) === 'number' && typeof (input2) === 'number') {
         result = input1 + input2;
@@ -9,8 +12,8 @@ function combine(input1: number | string, input2: number | string) {
     return result;
 }
 
-const combinedAges = combine(30, 26);
+const combinedAges = combine(30, 26, 'as-text');
 console.log(combinedAges);
 
-const combinedNames = combine('Ankur', 'Gupta');
+const combinedNames = combine('Ankur', 'Gupta', 'as-number');
 console.log(combinedNames);
