@@ -6,10 +6,6 @@ function printNum(n1: number) {
     console.log(n1);
 }
 
-function printNum1(n1: number): void {
-    console.log(n1);
-}
+let combineValues: (a: number, b: number) => number;
+combineValues = add;
 
-function printNum2(n1: number): void | string {
-    console.log(n1);
-}
