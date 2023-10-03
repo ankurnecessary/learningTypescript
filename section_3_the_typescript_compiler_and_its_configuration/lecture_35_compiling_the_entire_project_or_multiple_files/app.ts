@@ -1,4 +1,5 @@
 const userName = 'Maximilian';
+let u = '';
 
 console.log(userName);
 
