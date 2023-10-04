@@ -35,3 +35,14 @@ printOutput(add(5));
 
 const button = document.querySelector('button');
 button?.addEventListener('click', event => console.log(event));
+
+const hobbies: string[] = ['Sports', 'Cooking'];
+const activeHobbies: Array<string> = ['Hiking', ...hobbies];
+console.log(activeHobbies);
+
+const person = {
+    name: 'Ankur'
+    , age: 30
+};
+
+const copiedPerson = { ...person };
