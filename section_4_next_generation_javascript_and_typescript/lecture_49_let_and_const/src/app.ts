@@ -25,20 +25,20 @@ if (age > 20) {
 
 // console.log(isOlder);
 
-const add = (a: number, b: number = 1) => a + b;
+// const add = (a: number, b: number = 1) => a + b;
 
 // console.log(add(2, 5));
 
-const printOutput: (a: number | string) => void = output => console.log(output)
+// const printOutput: (a: number | string) => void = output => console.log(output)
 
-printOutput(add(5));
+// printOutput(add(5));
 
-const button = document.querySelector('button');
-button?.addEventListener('click', event => console.log(event));
+// const button = document.querySelector('button');
+// button?.addEventListener('click', event => console.log(event));
 
-const hobbies: string[] = ['Sports', 'Cooking'];
-const activeHobbies: Array<string> = ['Hiking', ...hobbies];
-console.log(activeHobbies);
+// const hobbies: string[] = ['Sports', 'Cooking'];
+// const activeHobbies: Array<string> = ['Hiking', ...hobbies];
+// console.log(activeHobbies);
 
 const person = {
     name: 'Ankur'
@@ -46,3 +46,8 @@ const person = {
 };
 
 const copiedPerson = { ...person };
+
+const add = (...numbers: Array<number>) => numbers.reduce((prev: number, curr: number) => prev + curr, 0);
+
+console.log(add(4, 3, 5));
+
