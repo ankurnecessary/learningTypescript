@@ -40,7 +40,7 @@ if (age > 20) {
 // const activeHobbies: Array<string> = ['Hiking', ...hobbies];
 // console.log(activeHobbies);
 
-const person = {
+let person = {
     name: 'Ankur'
     , age: 30
 };
@@ -51,3 +51,16 @@ const add = (...numbers: Array<number>) => numbers.reduce((prev: number, curr: n
 
 console.log(add(4, 3, 5));
 
+const hobbies: string[] = ['Sports', 'Cooking', 'Cricket', 'Reading'];
+// const hobby1 = hobbies[0];
+// const hobby2 = hobbies[1];
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+console.log(hobbies, hobby1, hobby2, remainingHobbies);
+
+person = {
+    name: 'Ankur'
+    , age: 30
+};
+
+const { name: name1, age: age1 } = person;
+console.log(name1, age1);
