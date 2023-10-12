@@ -25,4 +25,11 @@ function countAndDescribe<T extends lengthy>(element: T) {
 countAndDescribe([10]);
 countAndDescribe('');
 
+function getValueOfKey<T extends object, U extends keyof T>(obj: T, key: U) {
+    return obj[key];
+}
+
+getValueOfKey({ age: 10 }, 'age');
+
+
 
